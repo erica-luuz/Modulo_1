@@ -19,12 +19,10 @@ programa
 
 		real media = (nota1 + nota2 + nota3 + nota4) / 4
 
-		se(media >= 5)
-		{
+		se(media >= 5){
 			escreva("Aluno Aprovado!")
 		}
-		senao
-		{
+		senao{
 			escreva("Aluno Reprovado...")
 		}
 		
@@ -36,7 +34,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 371; 
+ * @POSICAO-CURSOR = 462; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

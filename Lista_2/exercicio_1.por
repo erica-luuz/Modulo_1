@@ -7,13 +7,11 @@ programa
 		escreva("Digite sua idade: ")
 		leia(idade)
 
-		se(idade >= 18)
-		{
-		escreva("O usuário é maior de idade")
+		se(idade >= 18){
+			escreva("O usuário é maior de idade")
 		}
-		senao
-		{
-		escreva("O usuário é menor de idade")
+		senao{
+			escreva("O usuário é menor de idade")
 		}
 	}
 }
@@ -22,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 222; 
+ * @POSICAO-CURSOR = 218; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

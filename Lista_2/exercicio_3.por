@@ -13,16 +13,14 @@ programa
 		escreva("Digite um nome para pesquisa: ")
 		leia(nome1)
 
-		se(nome1 == "filomena")
-		{
+		se(nome1 == "filomena"){
 			escreva(filomena1[0] + "\n")
 			escreva(filomena1[1] + "\n")
 			escreva(filomena1[2] + "\n")
 			escreva(filomena1[3] + "\n")
 			escreva(filomena1[4] + "\n")
 		}
-		senao
-		{
+		senao{
 			escreva(joselito[0] + "\n")
 			escreva(joselito[1] + "\n")
 			escreva(joselito[2] + "\n")
@@ -37,7 +35,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 15; 
+ * @POSICAO-CURSOR = 758; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {filomena1, 9, 9, 9}-{joselito, 10, 9, 8};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
