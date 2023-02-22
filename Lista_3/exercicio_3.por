@@ -1,6 +1,5 @@
 programa
 {
-	inclua biblioteca Matematica -->mat
 	
 	funcao inicio()
 	{
@@ -49,9 +48,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 295; 
+ * @POSICAO-CURSOR = 10; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {salario, 7, 7, 7}-{percentual, 7, 22, 10}-{mediaSalario, 7, 40, 12}-{somaSalario, 7, 60, 11}-{somaFilhos, 7, 79, 10}-{mediaFilhos, 8, 8, 11}-{contador, 9, 10, 8}-{contadorPercentual, 9, 24, 18}-{filhos, 9, 47, 6}-{maior, 9, 55, 5}-{numFichas, 9, 68, 9};
+ * @SIMBOLOS-INSPECIONADOS = {salario, 6, 7, 7}-{percentual, 6, 22, 10}-{mediaSalario, 6, 40, 12}-{somaSalario, 6, 60, 11}-{somaFilhos, 6, 79, 10}-{mediaFilhos, 7, 8, 11}-{contador, 8, 10, 8}-{contadorPercentual, 8, 24, 18}-{filhos, 8, 47, 6}-{maior, 8, 55, 5}-{numFichas, 8, 68, 9};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
