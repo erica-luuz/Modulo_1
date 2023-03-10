@@ -40,26 +40,22 @@ programa
 			}
 			escreva("\nA soma de todos elementos é: " + somatorioDeTodosElementos)
 		}senao se(opcao == 3){
-			para(inteiro linha=0; linha < num; linha++){
-				para(inteiro coluna=0; coluna < num; coluna++){
-					somatorioDaTerceiraLinha = somatorioDaTerceiraLinha + numero[3][coluna]
-				}
+			para(inteiro coluna=0; coluna < num; coluna++){
+					somatorioDaTerceiraLinha = somatorioDaTerceiraLinha + numero[2][coluna]
 			}
 			escreva("\nA soma da terceira linha é: " + somatorioDaTerceiraLinha)
-			//enroscada na 3º opção
 		}senao se (opcao == 4){
-			para(inteiro linha=0; linha < num; linha++){
+			para(inteiro linha=0; linha < num; linha++ ){
 				para(inteiro coluna=0; coluna < num; coluna++){
 					se(linha == coluna)
 					somatorioDaDiagonal = somatorioDaDiagonal + numero[linha][coluna]
-
 				}
 			}
 			escreva("O somatorio da diagonal principal é: " + somatorioDaDiagonal)
 		}senao se (opcao == 5){
 			para(inteiro linha=0; linha < num; linha++){
 				para(inteiro coluna=0; coluna < num; coluna++){
-					se(numero[1][coluna] / 2 == 0 )
+					se(numero[linha][coluna] / 2 == 0 )
 					somatorioDeIndicesPar = somatorioDeIndicesPar + numero[linha][coluna]
 					
 				}
@@ -74,7 +70,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2130; 
+ * @POSICAO-CURSOR = 2043; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {numero, 9, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
