@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		cadeia nome [5]
-		cadeia cpf [5]
+		cadeia cpf[5]
 		cadeia nomeLab, cpfLab
 		logico nomeDigitado = falso
 		logico cpfDigitado = falso
@@ -14,6 +14,7 @@ programa
 			leia(nome[i])
 			escreva("Insira um cpf: ")
 			leia(cpf[i])	
+			limpa()
 		}
 		escreva("Digite seu nome para entrar no sistema: ")
 		leia(nomeLab)
@@ -41,9 +42,9 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 724; 
+ * @POSICAO-CURSOR = 63; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
+ * @SIMBOLOS-INSPECIONADOS = {nome, 6, 9, 4}-{cpf, 7, 9, 3};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
