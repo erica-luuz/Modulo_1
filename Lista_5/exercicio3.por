@@ -47,21 +47,22 @@ programa
 		}senao se (opcao == 4){
 			para(inteiro linha=0; linha < num; linha++ ){
 				para(inteiro coluna=0; coluna < num; coluna++){
-					se(linha == coluna)
+					se(linha == coluna){
 					somatorioDaDiagonal = somatorioDaDiagonal + numero[linha][coluna]
+					}
 				}
 			}
 			escreva("O somatorio da diagonal principal é: " + somatorioDaDiagonal)
 		}senao se (opcao == 5){
-			para(inteiro linha=0; linha < num; linha++){
-				para(inteiro coluna=0; coluna < num; coluna++){
-					se(numero[linha][coluna] / 2 == 0 )
-					somatorioDeIndicesPar = somatorioDeIndicesPar + numero[linha][coluna]
-					
+			para(inteiro coluna=0; coluna < num; coluna++){
+				se(coluna % 2 == 0 ){
+					somatorioDeIndicesPar = somatorioDeIndicesPar + numero[1][coluna]
 				}
 			}
 			escreva("O somatorio dos indices pares: " + somatorioDeIndicesPar)
 			
+		}senao{
+			escreva("Opção nao econtrada")
 		}
 	}
 }
@@ -70,7 +71,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 2043; 
+ * @POSICAO-CURSOR = 1814; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = {numero, 9, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

@@ -1,29 +1,48 @@
 programa
 {
 	inclua biblioteca Util
-/*Aposta da Matriz! 
-Seu teste é o seguinte, você deve criar um jogo chamado “aposta da Matriz”. O jogo consiste em um programa que contém uma matriz 3x3 e 
-que será preenchida com números aleatórios de 1 a 9 (use a função sorteia da biblioteca Util). Após preenchida a matriz, seu jogo deve
-pedir para que o jogador escolha uma diagonal (digitar 1 para diagonal principal e 2 para diagonal secundária). Seu jogo deve realizar 
-o somatório dos valores da diagonal principal e da diagonal secundária e verificar qual dos dois valores é o maior. Se o somatório
-correspondente à diagonal escolhida pelo jogador for o maior, seu programa deve exibir a mensagem “apostou bem, ganhou o jogo!” caso
-contrário, seu programa deve exibir a mensagem: “apostou mal, perdeu o jogo” */
 
-	
 	funcao inicio()
 	{
 		const inteiro mat = 3
 		inteiro matriz[mat][mat]
-		inteiro 
-
-		escreva("Aposta da Matriz")
-
-
-
-
-
+		inteiro somaDiagonalPrincipal = 0
+		inteiro somaDiagonalSecundaria = 0
 		inteiro diagonalEscolhida = 0
-		escreva("Digite 1 para dagonal princiapl e 2 para doagonal secundária")
+		inteiro maior = 0
+
+		escreva("Aposta da Matriz\n")
+		para(inteiro linha=0; linha < mat; linha++){
+			para(inteiro coluna=0; coluna < mat; coluna++){
+				matriz[linha][coluna] = Util.sorteia(1, 9)
+			}
+
+		}
+		para(inteiro linha=0; linha < mat; linha++){
+			para(inteiro coluna=0; coluna < mat; coluna++){
+				se(linha == coluna){
+					somaDiagonalPrincipal = somaDiagonalPrincipal + matriz[linha][coluna]
+
+				}
+				se(linha + coluna == mat - 1){
+					somaDiagonalSecundaria = somaDiagonalSecundaria + matriz[linha][coluna]
+
+				}
+			}
+
+		}
+		escreva("Digite 1 para dagonal princiapl e 2 para diagonal secundária\n")
+		leia(diagonalEscolhida)
+
+		se(diagonalEscolhida == 1 e somaDiagonalPrincipal > somaDiagonalSecundaria){
+			escreva("Apostou bem, ganhou o jogo!")
+
+		}senao se (diagonalEscolhida == 2 e somaDiagonalSecundaria > somaDiagonalPrincipal){
+			escreva("Apostou bem! ganhou o jogo!")
+
+		}senao{
+			escreva("Apostou mal, perdeu o jogo")
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -31,9 +50,9 @@ contrário, seu programa deve exibir a mensagem: “apostou mal, perdeu o jogo�
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 12; 
+ * @POSICAO-CURSOR = 856; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {matriz, 15, 10, 6};
+ * @SIMBOLOS-INSPECIONADOS = {matriz, 8, 10, 6};
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */
